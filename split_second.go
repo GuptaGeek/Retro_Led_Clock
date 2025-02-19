@@ -8,6 +8,7 @@ import (
 )
 
 type placeholder [5]string
+const splitsecond=time.Second/10
 
 func main() {
 
@@ -15,7 +16,7 @@ func main() {
 		screen.Clear()
 		screen.MoveTopLeft()
 		RetroLedClock()
-		time.Sleep(time.Second)
+		time.Sleep(splitsecond)
 	}
 
 }
